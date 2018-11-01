@@ -1,16 +1,11 @@
-#include "pch.h"
+#include "main.h"
 #include "Console.h"
 #include <iostream>
 #include <string>
 
-Console::Console()
-{
-	std::string nazwaPliku;
-	std::cout << "Wpisz nazwê pliku";
-	std::cin >> nazwaPliku;
-}
+using namespace std;
 
-
-Console::~Console()
-{
+Console::Console() {
+	cout << "Wpisz nazwê pliku";
+	cin >> nazwaPliku;
 }
