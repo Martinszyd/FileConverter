@@ -1,10 +1,17 @@
 #pragma once
-#include "main.h"
+#ifndef CONSOLE_H
+#define CONSOLE_H
+
+using namespace std;
+
 class Console
 {
-public:
 	string nazwaPliku;
+public:
+	
 	Console();
+	string getNazwaPliku() { return nazwaPliku; }
 	
 };
+#endif
 
