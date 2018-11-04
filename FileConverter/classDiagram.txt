@@ -1,4 +1,10 @@
 @startuml
-Console --> Konwerter: nazwaPliku
-Konwerter --> main
+
+main --> Console : wywoluje
+Console --> Konwerter : przekazuje nazwe pliku txt
+Console --> KonwerterXML : przekazuje nazwe pliku xml
+
+Konwerter --> plik.xml : tworzy plik xml
+KonwerterXML --> plik.txt : tworzy plik txt
+
 @enduml

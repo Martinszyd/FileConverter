@@ -16,8 +16,6 @@ Konwerter::Konwerter(string nazwaPliku)
 {
 	ifstream plik;
 	ofstream plikWyjsciowy;
-
-		if (nazwaPliku.substr(nazwaPliku.find_last_of(".") + 1) == "txt")
 		{
 			plik.open(nazwaPliku);
 			
@@ -48,28 +46,7 @@ Konwerter::Konwerter(string nazwaPliku)
 			else
 				throw "Nie uda³o sie otworzyæ pliku";
 		}
-			
-		else if (nazwaPliku.substr(nazwaPliku.find_last_of(".") + 1) == "xml")
-		{
-
-			file<> xmlFile(nazwaPliku.c_str());
-			xml_document<> doc;
-			doc.parse<0>(xmlFile.data());
-			plikWyjsciowy.open("testWyjsciowy.txt");
-			for (xml_node<> *row = doc.first_node();
-				row; row = row->next_sibling()) {
-
-				for (xml_node<> *col = row->first_node();
-					col; col = col->next_sibling()) {
-					plikWyjsciowy << col->value() << " ";
-				}
-				plikWyjsciowy << endl;
-			}
-			plikWyjsciowy.close();
-
-		}
-		else
-			throw "Nie odnaleziono pliku o takiej nazwie";
+		
 };
 
 

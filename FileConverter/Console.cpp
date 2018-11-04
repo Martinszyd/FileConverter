@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 #include "Konwerter.h"
-//#include "KonwerterXML.h"
+#include "KonwerterXML.h"
 
 
 using namespace std;
@@ -10,7 +10,7 @@ using namespace std;
 Console::Console() {
 	cout << "Wpisz nazwê pliku";
 	cin >> nazwaPliku;
-	/*
+	
 	if (nazwaPliku.substr(nazwaPliku.find_last_of(".") + 1) == "txt")
 	{
 		Konwerter::Konwerter(nazwaPliku);
@@ -22,5 +22,5 @@ Console::Console() {
 	}
 
 	else
-		throw "Nie odnaleziono pliku o takiej nazwie"; */
+		throw "Nie odnaleziono pliku o takiej nazwie"; 
 }
