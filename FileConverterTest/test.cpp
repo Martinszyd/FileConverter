@@ -1,9 +1,20 @@
-#include "pch.h"
-#include "../FileConverter/Console.h";
+
 #include "../FileConverter/Konwerter.h";
+#include <string>;
+#include <iostream>
+#include "gtest/gtest.h"
+
+using namespace std;
+
+	TEST(Konwerter, plikTXT) {
+
+		EXPECT_EQ(1,1);
+	}
 
 
-TEST(TestCaseName, TestName) {
-  EXPECT_EQ(1, 1);
-  EXPECT_TRUE(true);
-}
+	/*
+		int main(int ac, char* av[])
+	{
+		testing::InitGoogleTest(&ac, av);
+		return RUN_ALL_TESTS();
+	}*/

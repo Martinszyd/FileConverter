@@ -1,6 +1,4 @@
-
-#ifndef KONWERTER_H
-#define KONWERTER_H
+#pragma once
 
 #include "Console.h"
 #include "rapidxml_utils.hpp"
@@ -9,11 +7,10 @@
 
 using namespace std;
 
-class Konwerter
+class KonwerterXML
 {
 public:
-	Konwerter(string nazwaPliku);
+	KonwerterXML(string nazwaPliku);
 	
 };
 
-#endif
